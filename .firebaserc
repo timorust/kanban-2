@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "kanban-2-e1497": {
+      "hosting": {
+        "kanban-board": [
+          "kanban-2-e1497"
+        ]
+      }
+    }
+  }
+}
