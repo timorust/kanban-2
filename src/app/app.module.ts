@@ -13,6 +13,9 @@ import {environment} from "../environments/environment";
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {CommonModule} from "@angular/common";
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -31,6 +34,9 @@ import {CommonModule} from "@angular/common";
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],

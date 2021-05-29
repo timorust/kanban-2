@@ -9,6 +9,19 @@
       HI {{userApp.name}}! <button (click)="appLogOut()">Log Out</button>
     </ng-container>
 
+
+
+    <button mat-button mat-stroked-button color="primary" [matMenuTriggerFor]="menuMat">Menu</button>
+    <mat-menu #menuMat="matMenu">
+      <button mat-menu-item *ngFor="let menu of menuForUser">
+        <mat-icon>{{menu.icon}}</mat-icon>
+        {{menu.title}}
+      </button>
+
+    </mat-menu>
+
+
+
   </header>
 
   <h1>Kanban Board</h1>

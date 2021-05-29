@@ -26,8 +26,29 @@ export class AppComponent {
   userSubApp;
 
 
+
+  menuForUser: any[] = [];
   constructor(private snackBar: MatSnackBar,
               private authService: AuthService) {
+
+    this.menuForUser = [
+      {
+        icon: 'person',
+        title: 'Profile',
+        url: 'profile'
+      },
+      {
+        icon: 'book',
+        title: 'Board',
+        url: '/'
+      },
+      {
+        icon: 'logout',
+        title: 'Logout',
+        url: 'logout'
+      }
+    ]
+
     this.importData();
   }
 
